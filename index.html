@@ -22,6 +22,7 @@
             <a href="#features">Nossos Serviços</a>
             <a href="#pricing">Preços</a>
             <a href="#imc">IMC</a>
+            <a href="formulario/form.html">Cadastre-se</a>
         </nav>
 
     </header>                       <!-- End Header -->
@@ -36,7 +37,7 @@
                         <div class="content">
                             <span>Seja o MAIS FORTE, entrando na nossa academia!</span>
                             <h3>Torne-se mais forte do que as suas fraquezas!</h3>
-                            <a href="#" class="btn">Iniciar</a>
+                            <a href="formulario/form.html" class="btn">Iniciar</a>
                         </div>
                         
                     </div>
@@ -188,20 +189,23 @@
         </section>                  <!-- End Pricing -->
         
         <section id="imc" class="imc">
-            <h1>IMC</h1>
-            <h3>Calcule o seu índice de massa corporal</h3>
-            <div class="inputBox">
-                <input type="text" name="peso" id="peso" class="inputUser" required>
-                <label for="peso" class="labelInput">Peso:</label>
+            <div class="box">
+                <h1>IMC</h1>
+                <h3>Calcule o seu índice de massa corporal</h3>
                 <br><br>
-            </div>
+                <div class="inputBox">
+                    <input type="number" name="peso" id="peso" class="inputUser" placeholder="Digite em Kg" required>
+                    <label for="peso" class="labelInput">Peso:</label>
+                    <br><br><br><br>
+                </div>
 
-            <div class="inputBox">
-                <input type="text" name="altura" id="altura" class="inputUser" required>
-                <label for="altura" class="labelInput">Altura:</label>
-                <br><br>
+                <div class="inputBox">
+                    <input type="number" name="altura" id="altura" class="inputUser" placeholder="Digite em metros" required>
+                    <label for="altura" class="labelInput">Altura:</label>
+                    <br><br>
+                </div>
+                <button class="btn">Calcular</button>
             </div>
-            <button class="calc">Calcular</button>
 
         </section>                  <!-- End Imc -->
 
@@ -211,11 +215,11 @@
         <div class="box-container">
             <div class="box">
                 <h3>Links rápidos</h3>
-                <a href="#home">Início</a>
-                <a href="#about">Sobre</a>
-                <a href="#features">Nossos Serviços</a>
-                <a href="#pricing">Preços</a>
-                <a href="#imc">IMC</a>
+                <a class="links" href="#home">Início</a>
+                <a class="links" href="#about">Sobre</a>
+                <a class="links" href="#features">Nossos Serviços</a>
+                <a class="links" href="#pricing">Preços</a>
+                <a class="links" href="#imc">IMC</a>
             </div>
             <div class="box">
                 <h3>Horário de Funcionamento</h3>
@@ -247,6 +251,8 @@
                     <input type="email" name="email" class="email" placeholder="Digite seu e-mail">
                     <input type="submit" value="Inscreva-se" class="btn">
                 </form>
+                <br><br>
+                <h1 class="date-h" id="date_hour"></h1>
             </div>
 
 
@@ -257,5 +263,4 @@
     
     <script src="main.js"></script>
 </body>
-
 </html>
