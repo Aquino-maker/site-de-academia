@@ -563,3 +563,6 @@ section {
         font-size: 50%;
     }
 }
+iframe {
+    width: 100%;
+}
