@@ -15,7 +15,7 @@
         <a href="index.html" class="logo"><span>FITNESS</span> TRAIN</a>
 
         <div id="menu-btn" class="fas fa-bars"></div>
-  
+
         <nav class="navbar">
             <a href="#home">Início</a>
             <a href="#about">Sobre</a>
@@ -87,7 +87,7 @@
                         <h3 class="fas fa-check"><i>Estratégias</i></h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt molestias iure consequuntur</p>
                     </div>
-                   
+
                     <div class="box">
                         <h3 class="fas fa-check"><i>Corpo e Mente</i></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ad quibusdam voluptatem eveniet</p>
@@ -189,22 +189,24 @@
         </section>                  <!-- End Pricing -->
         
         <section id="imc" class="imc">
-            <div class="box">
-                <h1>IMC</h1>
-                <h3>Calcule o seu índice de massa corporal</h3>
-                <br><br>
-                <div class="inputBox">
-                    <input type="number" name="peso" id="peso" class="inputUser" placeholder="Digite em Kg" required>
-                    <label for="peso" class="labelInput">Peso:</label>
-                    <br><br><br><br>
-                </div>
-
-                <div class="inputBox">
-                    <input type="number" name="altura" id="altura" class="inputUser" placeholder="Digite em metros" required>
-                    <label for="altura" class="labelInput">Altura:</label>
+            <div class="box-imc">
+                <form action="master.php" method="post">
+                    <h1>IMC</h1>
+                    <h3>Calcule o seu índice de massa corporal</h3>
                     <br><br>
-                </div>
-                <button class="btn">Calcular</button>
+                    <div class="inputBox">
+                        <input type="number" name="peso" id="peso" class="inputUser" placeholder="Digite em Kg" required>
+                        <label for="peso" class="labelInput">Peso:</label>
+                        <br><br><br><br>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="altura" id="altura" class="inputUser" placeholder="Digite em metros" required>
+                        <label for="altura" class="labelInput">Altura:</label>
+                        <br><br>
+                    </div>
+                    <button class="btn">Calcular</button>
+                </form>
             </div>
 
         </section>                  <!-- End Imc -->
