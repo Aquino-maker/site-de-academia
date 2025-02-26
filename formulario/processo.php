@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="form.css">
     <title>Resultado</title>
 </head>
 <body>
 <main>
-
     <div class="box">
         <?php
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $nome = htmlspecialchars($_POST['nome']);
             $email = htmlspecialchars($_POST['email']);
+            $cpf = htmlspecialchars($_POST['cpf']);
             $telefone = htmlspecialchars($_POST['telefone']);
             $genero = htmlspecialchars($_POST['genero']);
             $data_nascimento = htmlspecialchars($_POST['data_nascimento']);
@@ -26,6 +26,7 @@
             echo "<h2>Dados do cadastro</h2>";
             echo "<p><strong>Nome:</strong> $nome</p>";
             echo "<p><strong>E-mail:</strong> $email</p>";
+            echo "<p><strong>Cpf:</strong> $cpf</p>";
             echo "<p><strong>Telefone:</strong> $telefone</p>";
             echo "<h2>Sexo:</h2>";
             echo "<p><strong>Gênero</strong> $genero</p>";
@@ -62,7 +63,6 @@
             $allowebTypes = [
                 "image/jpeg",
                 "image/png",
-                "application/pdf"
             ];
         }elseif ($getPost) {
             echo "<p class='tigger warning'>Opa, calma lá amigão! Parece que o arquivo é grande.</p>";

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, #add8e6, #aacbe9);
+    background-image: linear-gradient(to left, #605d5d, #0c180d);
 }
 .box {
     color: white;
@@ -26,13 +26,13 @@ body {
 }
 
 fieldset {
-    border: 3px solid dodgerblue;
+    border: 3px solid rgb(5, 238, 21);
 }
 legend {
-    border: 1px solid dodgerblue;
+    border: 1px solid rgb(5, 238, 21);
     padding: 10px;
     text-align: center;
-    background-color: dodgerblue;
+    background-color: rgb(5, 238, 21);
     border-radius: 8px;
 }
 .inputBox {
@@ -69,7 +69,7 @@ legend {
     font-size: 15px;
 }
 #submit {
-    background-image: linear-gradient(to right, #1e90ff, #8140dd);
+    background-image: linear-gradient(to right, rgb(5, 231, 20), rgb(20, 170, 30));
     width: 100%;
     border: none;
     outline: none;
